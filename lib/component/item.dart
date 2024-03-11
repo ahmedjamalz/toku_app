@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:toku_app/models/number.dart';
 
@@ -34,7 +35,10 @@ class Item extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(right: 13),
             child: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                final player = AudioPlayer();
+                player.play(AssetSource(number.sound));
+              },
               icon: Icon(Icons.play_arrow, color: Colors.white),
             ),
           )
