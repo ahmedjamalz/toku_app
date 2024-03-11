@@ -3,12 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/models/number.dart';
 
 class Item extends StatelessWidget {
-  const Item({super.key, required this.number});
+  const Item({super.key, required this.number, required this.color});
   final Number number;
+  final Color color;
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xFFF9942E),
+      color: color,
       height: 100,
       child: Row(
         children: [
@@ -16,6 +17,7 @@ class Item extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(

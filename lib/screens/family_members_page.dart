@@ -2,26 +2,26 @@ import 'package:flutter/material.dart';
 import 'package:toku_app/component/item.dart';
 import 'package:toku_app/models/number.dart';
 
-class NumbersPage extends StatelessWidget {
-  const NumbersPage({super.key});
+class FamilyMembersPage extends StatelessWidget {
+  const FamilyMembersPage({super.key});
   final List<Number> numbers = const [
     Number(
-      sound: 'sounds/numbers/number_one_sound.mp3',
-      jpName: 'ichi',
-      enName: 'one',
-      image: 'assets/images/numbers/number_one.png',
+      sound: 'sounds/family_members/father.wav',
+      jpName: 'Chichioya',
+      enName: 'father',
+      image: 'assets/images/family_members/family_father.png',
     ),
     Number(
       sound: 'sounds/numbers/number_two_sound.mp3',
       jpName: 'Ni',
       enName: 'two',
-      image: 'assets/images/numbers/number_two.png',
+      image: 'assets/images/family_members/family_father.png',
     ),
     Number(
       sound: 'sounds/numbers/number_three_sound.mp3',
       jpName: 'San',
       enName: 'three',
-      image: 'assets/images/numbers/number_three.png',
+      image: 'assets/images/family_members/family_father.png',
     ),
     Number(
       sound: 'sounds/numbers/number_four_sound.mp3',
@@ -76,7 +76,10 @@ class NumbersPage extends StatelessWidget {
       body: ListView.builder(
         itemCount: numbers.length,
         itemBuilder: (context, index) {
-          return Item(number: numbers[index], color: const Color(0xFFF99430));
+          return Item(
+            color: Color(0xFF528031),
+            number: numbers[index],
+          );
         },
       ),
     );

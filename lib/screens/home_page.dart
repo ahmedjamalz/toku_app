@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toku_app/component/category.dart';
+import 'package:toku_app/screens/family_members_page.dart';
 import 'package:toku_app/screens/numbers_page.dart';
 
 class HomePage extends StatelessWidget {
@@ -24,9 +25,13 @@ class HomePage extends StatelessWidget {
             },
           ),
           Category(
-            text: ('Family Members'),
-            color: Color(0xFF528031),
-          ),
+              text: ('Family Members'),
+              color: Color(0xFF528031),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return FamilyMembersPage();
+                }));
+              }),
           Category(
             text: ('Colors'),
             color: Color(0xFF7C3FA1),
