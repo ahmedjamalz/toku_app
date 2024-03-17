@@ -7,77 +7,77 @@ class FamilyMembersPage extends StatelessWidget {
   final List<ItemModel> items = const [
     ItemModel(
       sound: 'sounds/family_members/father.wav',
-      jpName: 'Chichioya',
+      jpName: 'Chichioya ',
       enName: 'father',
       image: 'assets/images/family_members/family_father.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_two_sound.mp3',
-      jpName: 'Ni',
-      enName: 'two',
-      image: 'assets/images/family_members/family_father.png',
+      sound: 'sounds/family_members/daughter.wav',
+      jpName: 'Musume  ',
+      enName: 'daughter',
+      image: 'assets/images/family_members/family_daughter.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_three_sound.mp3',
-      jpName: 'San',
-      enName: 'three',
-      image: 'assets/images/family_members/family_father.png',
+      sound: 'sounds/family_members/grand father.wav',
+      jpName: 'Ojisan ',
+      enName: 'Grand Father',
+      image: 'assets/images/family_members/family_grandfather.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_four_sound.mp3',
-      jpName: 'Shi',
-      enName: 'four',
-      image: 'assets/images/numbers/number_four.png',
+      sound: 'sounds/family_members/mother.wav',
+      jpName: 'Hahaoya ',
+      enName: 'mother',
+      image: 'assets/images/family_members/family_mother.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_five_sound.mp3',
-      jpName: 'Go',
-      enName: 'five',
-      image: 'assets/images/numbers/number_five.png',
+      sound: 'sounds/family_members/grand mother.wav',
+      jpName: 'Sobo ',
+      enName: 'grand mother',
+      image: 'assets/images/family_members/family_grandmother.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_six_sound.mp3',
-      jpName: 'Roku',
-      enName: 'six',
-      image: 'assets/images/numbers/number_six.png',
+      sound: 'sounds/family_members/older bother.wav',
+      jpName: 'Nisan ',
+      enName: 'older brother',
+      image: 'assets/images/family_members/family_older_brother.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_seven_sound.mp3',
-      jpName: 'Sebun',
-      enName: 'seven',
-      image: 'assets/images/numbers/number_seven.png',
+      sound: 'sounds/family_members/older sister.wav',
+      jpName: 'Ane ',
+      enName: 'older sister',
+      image: 'assets/images/family_members/family_older_sister.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_eight_sound.mp3',
-      jpName: 'hachi',
-      enName: 'eight',
-      image: 'assets/images/numbers/number_eight.png',
+      sound: 'sounds/family_members/son.wav',
+      jpName: 'Musuko ',
+      enName: 'son',
+      image: 'assets/images/family_members/family_son.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_nine_sound.mp3',
+      sound: 'sounds/family_members/father.wav',
       jpName: 'Kyū',
       enName: 'nine',
-      image: 'assets/images/numbers/number_nine.png',
+      image: 'assets/images/family_members/family_father.png',
     ),
     ItemModel(
-      sound: 'sounds/numbers/number_ten_sound.mp3',
+      sound: 'sounds/family_members/older sister.wav',
       jpName: 'Jū',
       enName: 'ten',
-      image: 'assets/images/numbers/number_ten.png',
+      image: 'assets/images/family_members/family_older_sister.png',
     )
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF453025),
-        title: Text('Numbers'),
+        backgroundColor: const Color(0xFF453025),
+        title: const Text('Family Members'),
       ),
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, index) {
           return Item(
-            color: Color(0xFF528031),
+            color: const Color(0xFF528031),
             item: items[index],
           );
         },

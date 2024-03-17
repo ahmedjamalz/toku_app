@@ -17,16 +17,16 @@ class ItemInfo extends StatelessWidget {
             children: [
               Text(
                 item.jpName,
-                style: TextStyle(color: Colors.white, fontSize: 17),
+                style: const TextStyle(color: Colors.white, fontSize: 16),
               ),
               Text(
                 item.enName,
-                style: TextStyle(color: Colors.white, fontSize: 17),
+                style: const TextStyle(color: Colors.white, fontSize: 16),
               ),
             ],
           ),
         ),
-        Spacer(
+        const Spacer(
           flex: 1,
         ),
         Padding(
@@ -36,7 +36,7 @@ class ItemInfo extends StatelessWidget {
               final player = AudioPlayer();
               player.play(AssetSource(item.sound));
             },
-            icon: Icon(Icons.play_arrow, color: Colors.white),
+            icon: const Icon(Icons.play_arrow, color: Colors.white),
           ),
         )
       ],
