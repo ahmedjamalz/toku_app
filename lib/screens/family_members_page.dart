@@ -20,7 +20,7 @@ class FamilyMembersPage extends StatelessWidget {
     ItemModel(
       sound: 'sounds/family_members/grand father.wav',
       jpName: 'Ojisan ',
-      enName: 'Grand Father',
+      enName: 'grand Father',
       image: 'assets/images/family_members/family_grandfather.png',
     ),
     ItemModel(
@@ -54,16 +54,16 @@ class FamilyMembersPage extends StatelessWidget {
       image: 'assets/images/family_members/family_son.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/father.wav',
-      jpName: 'Kyū',
-      enName: 'nine',
-      image: 'assets/images/family_members/family_father.png',
+      sound: 'sounds/family_members/younger brohter.wav',
+      jpName: 'Otouto ',
+      enName: 'younger brohter',
+      image: 'assets/images/family_members/family_younger_brother.png',
     ),
     ItemModel(
-      sound: 'sounds/family_members/older sister.wav',
-      jpName: 'Jū',
-      enName: 'ten',
-      image: 'assets/images/family_members/family_older_sister.png',
+      sound: 'sounds/family_members/younger sister.wav',
+      jpName: 'Imoto',
+      enName: 'younger sister',
+      image: 'assets/images/family_members/family_younger_sister.png',
     )
   ];
   @override
